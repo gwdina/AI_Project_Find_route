@@ -1,0 +1,37 @@
+This program is to be done in a cmd window.
+
+To run:
+
+arg 1: A map text file of connected cities, where each line has the names of the cities and their distance between them. Some cities can be in a different area and won't connect with certain cities, ex: Austin is in Texas and isn't connected to cities in Oklahoma.
+
+arg 2: starting city
+
+arg 3: ending city
+
+
+Decscription:
+First the program will build a map/web of the cities first then preforms a BFS, where it doesn't keep track of the visted cities, to find shortest path. 
+
+
+Result:
+
+Will give you the route from starting cities to the ending location and the cost.
+EX: El_Paso Amarillo
+Distance: 36 km
+Route:
+El_paso to Odessa, 11 km
+Odessa to Midland, 5 km
+Midland to Lubbock , 20 km
+Lubbock to Amarillo, 10 km
+
+If it can't find the city it means that the two cities werent connected. 
+EX: Austin Oklahoma_city
+Distance: infinity
+Route: none
+
+
+If the start is the same as the end then no route was found
+EX: Austin Austin
+Distance: 0 km
+Route:
+Austin to Austin, 0 km
